@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- title -->
+
+
+
+
+<!-- keywords -->
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+    <meta name="author" content="Aiemu">
+    <meta name="renderer" content="webkit">
+    <meta name="copyright" content="Aiemu">
+    
+    <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
+    
+    <meta name="description" content="">
+    <meta name="description" content="8.1 - 10.1 国庆70周年庆祝活动训练缘起还是大一新生的时候经常被拉到综体去洗脑，有几次是放的《八天七夜》那个粗制滥造滥造的纪录片（不过对09年的东西要求也不能太高），就好羡慕9字班的兄弟们能够参加。 情结09那次国庆，和爸妈还有爸的几个同事一起去开车九龙旅游，应该是9.30晚到的目的地。第二天上午大概9点吧，就守着宾馆那个2&#x2F;30寸的大屁股电视看起了阅兵式，那会也看不懂啥就觉得队伍好整齐">
+<meta property="og:type" content="article">
+<meta property="og:title" content="专项">
+<meta property="og:url" content="http://aimerlover.cn/2019/10/01/%E4%B8%93%E9%A1%B9%E6%9C%89%E6%84%9F/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="8.1 - 10.1 国庆70周年庆祝活动训练缘起还是大一新生的时候经常被拉到综体去洗脑，有几次是放的《八天七夜》那个粗制滥造滥造的纪录片（不过对09年的东西要求也不能太高），就好羡慕9字班的兄弟们能够参加。 情结09那次国庆，和爸妈还有爸的几个同事一起去开车九龙旅游，应该是9.30晚到的目的地。第二天上午大概9点吧，就守着宾馆那个2&#x2F;30寸的大屁股电视看起了阅兵式，那会也看不懂啥就觉得队伍好整齐">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-10-01T15:35:30.000Z">
+<meta property="article:modified_time" content="2019-11-08T03:03:55.878Z">
+<meta property="article:author" content="Aiemu">
+<meta property="article:tag" content="life">
+<meta name="twitter:card" content="summary">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    
+    <title>专项 · Aiemu&#39;s Studio</title>
+    <style type="text/css">
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/font/Oswald-Regular.ttf");
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        /* height: 50vh; */
+        overflow: hidden;
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s infinite;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+</style>
+
+    <link rel="preload" href= "/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href= "/css/mobile.css?v=20180824" media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    
+    <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+/* This file is meant as a standalone workflow for
+- testing support for link[rel=preload]
+- enabling async CSS loading in browsers that do not support rel=preload
+- applying rel preload css once loaded, whether supported or not.
+*/ -->
+<script>
+(function( w ){
+	"use strict";
+	// rel=preload support test
+	if( !w.loadCSS ){
+		w.loadCSS = function(){};
+	}
+	// define on the loadCSS obj
+	var rp = loadCSS.relpreload = {};
+	// rel=preload feature support test
+	// runs once and returns a function for compat purposes
+	rp.support = (function(){
+		var ret;
+		try {
+			ret = w.document.createElement( "link" ).relList.supports( "preload" );
+		} catch (e) {
+			ret = false;
+		}
+		return function(){
+			return ret;
+		};
+	})();
+
+	// if preload isn't supported, get an asynchronous load by using a non-matching media attribute
+	// then change that media back to its intended value on load
+	rp.bindMediaToggle = function( link ){
+		// remember existing media attr for ultimate state, or default to 'all'
+		var finalMedia = link.media || "all";
+
+		function enableStylesheet(){
+			link.media = finalMedia;
+		}
+
+		// bind load handlers to enable media
+		if( link.addEventListener ){
+			link.addEventListener( "load", enableStylesheet );
+		} else if( link.attachEvent ){
+			link.attachEvent( "onload", enableStylesheet );
+		}
+
+		// Set rel and non-applicable media type to start an async request
+		// note: timeout allows this to happen async to let rendering continue in IE
+		setTimeout(function(){
+			link.rel = "stylesheet";
+			link.media = "only x";
+		});
+		// also enable media after 3 seconds,
+		// which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
+		setTimeout( enableStylesheet, 3000 );
+	};
+
+	// loop through link elements in DOM
+	rp.poly = function(){
+		// double check this to prevent external calls from running
+		if( rp.support() ){
+			return;
+		}
+		var links = w.document.getElementsByTagName( "link" );
+		for( var i = 0; i < links.length; i++ ){
+			var link = links[ i ];
+			// qualify links to those with rel=preload and as=style attrs
+			if( link.rel === "preload" && link.getAttribute( "as" ) === "style" && !link.getAttribute( "data-loadcss" ) ){
+				// prevent rerunning on link
+				link.setAttribute( "data-loadcss", true );
+				// bind listeners to toggle media back
+				rp.bindMediaToggle( link );
+			}
+		}
+	};
+
+	// if unsupported, run the polyfill
+	if( !rp.support() ){
+		// run once at least
+		rp.poly();
+
+		// rerun poly on an interval until onload
+		var run = w.setInterval( rp.poly, 500 );
+		if( w.addEventListener ){
+			w.addEventListener( "load", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		} else if( w.attachEvent ){
+			w.attachEvent( "onload", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		}
+	}
+
+
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ) );
+</script>
+
+    <link rel="icon" href= "/assets/favicon.ico" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js" as="script" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" as="script" />
+    <link rel="preload" href="/scripts/main.js" as="script" />
+    <link rel="preload" as="font" href="/font/Oswald-Regular.ttf" crossorigin>
+    <link rel="preload" as="font" href="https://at.alicdn.com/t/font_327081_1dta1rlogw17zaor.woff" crossorigin>
+    
+    <!-- fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" defer></script>
+    <!-- 百度统计  -->
+    
+    <!-- 谷歌统计  -->
+    
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+    
+        <body class="post-body">
+    
+    
+<header class="header">
+
+    <div class="read-progress"></div>
+    <div class="header-sidebar-menu">&#xe775;</div>
+    <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >Aiemu&#39;s Studio.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">专项</a>
+            </div>
+    </div>
+    
+    <a class="home-link" href=/>Aiemu's Studio.</a>
+</header>
+    <div class="wrapper">
+        <div class="site-intro" style="
+
+
+
+
+
+
+
+height:50vh;
+">
+    
+    <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
+            
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-img" style="background-image: url(https://source.unsplash.com/random)"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+            专项
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+            
+            <!-- 404 -->
+            
+        </p>
+        <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "life">life</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>Word count: <span class="post-count word-count">1.9k</span>Reading time: <span class="post-count reading-time">6 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/10/01</span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        
+    </div>
+</div>
+        <script>
+ 
+  // get user agent
+  var browser = {
+    versions: function () {
+      var u = window.navigator.userAgent;
+      return {
+        userAgent: u,
+        trident: u.indexOf('Trident') > -1, //IE内核
+        presto: u.indexOf('Presto') > -1, //opera内核
+        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+        iPad: u.indexOf('iPad') > -1, //是否为iPad
+        webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+        weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+        uc: u.indexOf('UCBrowser') > -1 //是否为android下的UC浏览器
+      };
+    }()
+  }
+  console.log("userAgent:" + browser.versions.userAgent);
+
+  // callback
+  function fontLoaded() {
+    console.log('font loaded');
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
+      document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
+      var postIntros = document.getElementsByClassName('post-intros')[0]
+      if (postIntros) {
+        postIntros.classList.add('post-fade-in');
+      }
+    }
+  }
+
+  // UC不支持跨域，所以直接显示
+  function asyncCb(){
+    if (browser.versions.uc) {
+      console.log("UCBrowser");
+      fontLoaded();
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular']
+        },
+        loading: function () {  //所有字体开始加载
+          // console.log('loading');
+        },
+        active: function () {  //所有字体已渲染
+          fontLoaded();
+        },
+        inactive: function () { //字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout');
+          fontLoaded();
+        },
+        timeout: 5000 // Set the timeout to two seconds
+      });
+    }
+  }
+
+  function asyncErr(){
+    console.warn('script load from CDN failed, will load local script')
+  }
+
+  // load webfont-loader async, and add callback function
+  function async(u, cb, err) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (cb) { o.addEventListener('load', function (e) { cb(null, e); }, false); }
+    if (err) { o.addEventListener('error', function (e) { err(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  var asyncLoadWithFallBack = function(arr, success, reject) {
+      var currReject = function(){
+        reject()
+        arr.shift()
+        if(arr.length)
+          async(arr[0], success, currReject)
+        }
+
+      async(arr[0], success, currReject)
+  }
+
+  asyncLoadWithFallBack([
+    "https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js", 
+    "https://cdn.bootcss.com/webfont/1.6.28/webfontloader.js",
+    "/lib/webfontloader.min.js"
+  ], asyncCb, asyncErr)
+</script>        
+        <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+        <div class="container container-unloaded">
+            <main class="main post-page">
+    <article class="article-entry">
+        <h1 id="8-1-10-1-国庆70周年庆祝活动训练"><a href="#8-1-10-1-国庆70周年庆祝活动训练" class="headerlink" title="8.1 - 10.1 国庆70周年庆祝活动训练"></a>8.1 - 10.1 国庆70周年庆祝活动训练</h1><h2 id="缘起"><a href="#缘起" class="headerlink" title="缘起"></a>缘起</h2><p>还是大一新生的时候经常被拉到综体去洗脑，有几次是放的《八天七夜》那个粗制滥造滥造的纪录片（不过对09年的东西要求也不能太高），就好羡慕9字班的兄弟们能够参加。</p>
+<h2 id="情结"><a href="#情结" class="headerlink" title="情结"></a>情结</h2><p>09那次国庆，和爸妈还有爸的几个同事一起去开车九龙旅游，应该是9.30晚到的目的地。第二天上午大概9点吧，就守着宾馆那个2/30寸的大屁股电视看起了阅兵式，那会也看不懂啥就觉得队伍好整齐，飞机装甲车好厉害。应该也是从那时候知道的从建国后国内环境稳定下来之后大概就5年一小庆，10年一大庆（也记不太清14年的时候究竟有没有庆祝）。从那之后之后每一次阅兵都应该有看过。可能一直以来强烈的家国情怀也和这有关。</p>
+<h2 id="报名"><a href="#报名" class="headerlink" title="报名"></a>报名</h2><p>大概6月就开始有传闻在说各院系已经开始组织报名了，然后自己就开始很期待。软院这边好像延迟了几天才神神秘秘地叫到东主楼会议室开会，保密会议，有些部分连ppt都不让做（其实大家基本都知道是啥事了）。回去之后就自己很积极地报了名。<br>然后有毫无音信好长时间，小学期快结束了齐强说他已经收到了通知，妈去问徐导，徐导才说我在名单上。<br>然后就安排好了去西北玩的时间7.31高铁回京。</p>
+<h2 id="训练一阶段————暑期集训"><a href="#训练一阶段————暑期集训" class="headerlink" title="训练一阶段————暑期集训"></a>训练一阶段————暑期集训</h2><p>7.31晚忙忙慌慌赶回学校，跑到东操领了训练服，有意领小的裤子结果真的小了，但因为太懒又没有去换。长裤站着刚刚到脚踝，短裤站着还好，一骑车大腿就要露一半出来，难顶。<br>训练前几天都是在西操，还可以穿自己的衣服，基本上就是训练队列和学习动作之类的。有天训练的时候中队长请喝奶茶🥤，因为不好意思就没能喝到。。。然后王斌老师和其他几个软院的老师来看望我们和软院大部队分开的小队，然后一人发了一盒芦荟胶和一个电风扇。期间还有次主题会，大概就是大家教室里分组围一起讨论分享之类的。核研院的党委书记在讲话的时候说到苏联卫国战争期间的红场大阅兵的时候泪目了，坐在第一排还看见他用手甩落的泪。<br>之后训练就开始在东操合练了，开始有第一款道具，一束三朵塑料玫瑰。合练的效果还信基本能走整齐，动作啥的也没谁拉胯。基本就是训练一个小时休息十几分钟。为了防晒每天早起真的难顶，起来之后就去丁香吃早饭，黑白绿三种蛋糕轮着配豆浆。上午10:30训练完学校很贴心地让食堂提前开餐，中午也有热水洗澡。8月份的北京早上8点左右就开始疯狂升温，热出翔。</p>
+<h2 id="训练二阶段————外出验收"><a href="#训练二阶段————外出验收" class="headerlink" title="训练二阶段————外出验收"></a>训练二阶段————外出验收</h2><h3 id="第一次"><a href="#第一次" class="headerlink" title="第一次"></a>第一次</h3><p>暑期集中训练结束前拉到首都机场旁边的跑马场去验收了一次，是凌晨3点左右出发的吧，6点多到了然后验收了2/3次就回来了。虽然正式验收前大家都心不在焉有说有笑的，到了真验收的时候还是很认真地去走的。<br>最后验收结果三分指第一！</p>
+<h3 id="第二次"><a href="#第二次" class="headerlink" title="第二次"></a>第二次</h3><p>第二次是拉到了某军区，应该是空军物资啥的。坐的公交车去，半夜车上的广播就开始到站提醒。。。根本睡不着。这次验收还有一大堆摄影机啥的，之后一次讲座上还放了录像。</p>
+<h3 id="第三次"><a href="#第三次" class="headerlink" title="第三次"></a>第三次</h3><p>依旧是军区，准确是阅兵村，应该是为了阅兵特地修的各种东西一应俱全。</p>
+<h3 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h3><p>三次都是差不多的餐包，只有牛肉干想吃，别的完全没食欲，那牛肉干咸的离谱，还像塑料皮包肉末一样。<br>三次都有点晕车。<br>一路上各个交通枢纽，都有警察叔叔或者其他工作人员在协调，真的是为了一次彩排验收的顺利进行调用了极大极大的资源。</p>
+<h2 id="训练三阶段————夜宿长安街"><a href="#训练三阶段————夜宿长安街" class="headerlink" title="训练三阶段————夜宿长安街"></a>训练三阶段————夜宿长安街</h2><p>一共两次吧应该，内容都差不多。<br>国庆前最后那个周六，也是最后一次彩排，集体从西门乘地铁到了东单。大概是下午五六点在新闻系馆集合，结果在西门口呆了一个多小时，又在圆明园地铁站外呆了一个多小时，发的餐包也不让开（里面有酸奶，吐司，巨难次的牛肉猪肉片，榨菜，餐巾纸）。最后在地铁上挤了半天，下了地铁又挤了好久才有地坐下来。<br>之后实在是无聊就到处去走，弄清楚了各个方阵对应的编号和名称。到底还是18伟大复兴方阵有排面。<br>那天晚上一直不知道时间是啥，反正浑浑噩噩不知道多久之后终于开始练了。期间和涛哥讨论孙哥保研机试的试题，结果旁边一化学系的8字班学弟跑来指导我们。之后还和我们交流了些java，cpp以及他自己做的一些小项目，这学弟是真滴nb。<br>快到我们的时候，我们先到长安街两侧的人行道上集合，然后看着各种先进武器装备从面前经过的时候超激动，还狂给吉普车上的将军们摇花，很多将军还会给我们挥手示意。</p>
+<h2 id="出征"><a href="#出征" class="headerlink" title="出征"></a>出征</h2><p>前面的情节和训练三阶段的情况差不多，不过这次是一直等到了天亮。当习大大的专车从我们藏的小巷经过的时候大家激动的不得了，都争相跳起来看。。。之后分列式结束，我们到了长安街上集结，那天天特别蓝，长安街上也一派庄严整洁之景。快到天安门的时候就一直朝着城楼上望，想看看各位领导人。最后走近了，发现习主席左右两侧都每人。。。孤独得很<br>大家都超兴奋，动作比平时幅度大，口号喊得好像也比平时大声得多，自由动作的时间群魔乱舞。。。有兄弟的狰狞面目还被特写上了央视。<br>从东单一直走到了西单，坐上了回学校的地铁，到了学校门口，还有军乐队奏乐欢迎，还可以另酸奶和冰镇可乐啥的。<br>午餐在紫荆一楼白嫖，蒜蓉排骨真滴好恰。</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>训练服，正式参演服和道具都让自己保留了下来，很值得纪念。除了学院发的纪念币还得了一枚“国家级”纪念章，纪念证书。可惜最后的总结表彰大会太懒没去。<br>到此，专项活动也就正式结束了，这篇感想也在大会次日基本完成，也算有尾吧。之后想起来别的啥再补充8.</p>
+
+    </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>Author：<a href="http://aimerlover.cn">Aiemu</a>
+            <p>原文链接：<a href="http://aimerlover.cn/2019/10/01/%E4%B8%93%E9%A1%B9%E6%9C%89%E6%84%9F/">http://aimerlover.cn/2019/10/01/%E4%B8%93%E9%A1%B9%E6%9C%89%E6%84%9F/</a>
+            <p>发表日期：<a href="http://aimerlover.cn/2019/10/01/%E4%B8%93%E9%A1%B9%E6%9C%89%E6%84%9F/">October 1st 2019, 11:35:30 pm</a>
+            <p>更新日期：<a href="http://aimerlover.cn/2019/10/01/%E4%B8%93%E9%A1%B9%E6%9C%89%E6%84%9F/">November 8th 2019, 11:03:55 am</a>
+            <p>版权声明：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
+    
+    <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/2019/11/08/Wish-List/" title= "Wish List">
+                    <div class="nextTitle">Wish List</div>
+                </a>
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2019/09/19/Notes-for-help/" title= "Notes for help">
+                    <div class="prevTitle">Notes for help</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
+    
+    
+    <!-- gitalk评论 -->
+
+    <!-- utteranc评论 -->
+
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
+            
+        </div>
+        <footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+    <div class="social">
+        
+    
+        
+            
+                <a href="mailto:zengz17@outlook.com" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/Aiemu" class="iconfont-archer github" target="_blank" title=github></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    </div>
+    
+    <!-- powered by Hexo  -->
+    <!-- <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span>
+    </div> -->
+    <!-- 不蒜子  -->
+    
+</footer>
+
+    </div>
+    <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#8-1-10-1-%E5%9B%BD%E5%BA%8670%E5%91%A8%E5%B9%B4%E5%BA%86%E7%A5%9D%E6%B4%BB%E5%8A%A8%E8%AE%AD%E7%BB%83"><span class="toc-number">1.</span> <span class="toc-text">8.1 - 10.1 国庆70周年庆祝活动训练</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%98%E8%B5%B7"><span class="toc-number">1.1.</span> <span class="toc-text">缘起</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%83%85%E7%BB%93"><span class="toc-number">1.2.</span> <span class="toc-text">情结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%A5%E5%90%8D"><span class="toc-number">1.3.</span> <span class="toc-text">报名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%AD%E7%BB%83%E4%B8%80%E9%98%B6%E6%AE%B5%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E6%9A%91%E6%9C%9F%E9%9B%86%E8%AE%AD"><span class="toc-number">1.4.</span> <span class="toc-text">训练一阶段————暑期集训</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%AD%E7%BB%83%E4%BA%8C%E9%98%B6%E6%AE%B5%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E5%A4%96%E5%87%BA%E9%AA%8C%E6%94%B6"><span class="toc-number">1.5.</span> <span class="toc-text">训练二阶段————外出验收</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AC%A1"><span class="toc-number">1.5.1.</span> <span class="toc-text">第一次</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AC%A1"><span class="toc-number">1.5.2.</span> <span class="toc-text">第二次</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%AC%A1"><span class="toc-number">1.5.3.</span> <span class="toc-text">第三次</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A5%E5%85%85"><span class="toc-number">1.5.4.</span> <span class="toc-text">补充</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%AD%E7%BB%83%E4%B8%89%E9%98%B6%E6%AE%B5%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E5%A4%9C%E5%AE%BF%E9%95%BF%E5%AE%89%E8%A1%97"><span class="toc-number">1.6.</span> <span class="toc-text">训练三阶段————夜宿长安街</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%BA%E5%BE%81"><span class="toc-number">1.7.</span> <span class="toc-text">出征</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8E%E8%AE%B0"><span class="toc-number">1.8.</span> <span class="toc-text">后记</span></a></li></ol></li></ol>
+    </div>
+    
+    <div class="back-top iconfont-archer">&#xe639;</div>
+    <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
+    <div class="sidebar-content sidebar-content-show-archive">
+          <div class="sidebar-panel-archives">
+    <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-and-search">
+        <div class="total-archive">
+        Total : 6
+        </div>
+        <!-- search  -->
+        
+    </div>
+    
+    <div class="post-archive">
+    
+    
+    
+    
+    <div class="archive-year"> 2019 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/17</span><a class="archive-post-title" href= "/2019/12/17/Web-Collection/" >Web Collection</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/08</span><a class="archive-post-title" href= "/2019/11/08/Wish-List/" >Wish List</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/01</span><a class="archive-post-title" href= "/2019/10/01/%E4%B8%93%E9%A1%B9%E6%9C%89%E6%84%9F/" >专项</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/19</span><a class="archive-post-title" href= "/2019/09/19/Notes-for-help/" >Notes for help</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/18</span><a class="archive-post-title" href= "/2019/09/18/test/" >Tips for md</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/10</span><a class="archive-post-title" href= "/2019/09/10/hello-world/" >Hello World</a>
+        </li>
+    
+    </div>
+  </div>
+        <div class="sidebar-panel-tags">
+    <div class="sidebar-tags-name">
+    
+        <span class="sidebar-tag-name" data-tags="note"><span class="iconfont-archer">&#xe606;</span>note</span>
+    
+        <span class="sidebar-tag-name" data-tags="life"><span class="iconfont-archer">&#xe606;</span>life</span>
+    
+        <span class="sidebar-tag-name" data-tags="hello world"><span class="iconfont-archer">&#xe606;</span>hello world</span>
+    
+        <span class="sidebar-tag-name" data-tags="markdown"><span class="iconfont-archer">&#xe606;</span>markdown</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+    缺失模块。<br/>
+    1、请确保node版本大于6.2<br/>
+    2、在博客根目录（注意不是archer根目录）执行以下命令：<br/>
+    <span style="color: #f75357; font-size: 1rem; line-height: 2rem;">npm i hexo-generator-json-content --save</span><br/>
+    3、在根目录_config.yml里添加配置：
+    <pre style="color: #787878; font-size: 0.6rem;">
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: true
+    tags: true</pre>
+    </div> 
+    <div class="sidebar-tags-list"></div>
+</div>
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
+    </div>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
+</div>
+    </div>
+</div> 
+    <script>
+    var siteMeta = {
+        root: "/",
+        author: "Aiemu"
+    }
+</script>
+    <!-- CDN failover -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (typeof window.$ === 'undefined')
+        {
+            console.warn('jquery load from jsdelivr failed, will load local script')
+            document.write('<script src="/lib/jquery.min.js">\x3C/script>')
+        }
+    </script>
+    <script src="/scripts/main.js"></script>
+    <!-- algolia -->
+    
+    <!-- busuanzi  -->
+    
+    <!-- CNZZ  -->
+    
+    </div>
+    <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
+     
+    </body>
+</html>
+
+
